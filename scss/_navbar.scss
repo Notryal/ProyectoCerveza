@@ -35,7 +35,9 @@ body {
   
   .header li a:hover,
   .header .menu-btn:hover {
-    background-color: #f4f4f4;
+    background-color: $brown;
+    transition: background-color 0.5s;
+    color: #f4f4f4
   }
   
   .header .logo {
@@ -147,10 +149,14 @@ body {
     z-index: 1030;
 }
 
-@media (min-width: 992px)
+@media (min-width: 992px) {
 .navbar-expand-lg {
     -ms-flex-flow: row nowrap;
     flex-flow: row nowrap;
     -ms-flex-pack: start;
     justify-content: flex-start;
+  }
 }
+
+
+

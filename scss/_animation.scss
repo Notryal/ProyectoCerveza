@@ -1,0 +1,19 @@
+/* This only changes this particular animation duration */
+.animate__animated.animate__fadeInDown {
+    --animate-duration: 2s;
+  }
+  
+  /* This changes all the animations globally */
+  /*:root {
+    --animate-duration: 800ms;
+    --animate-delay: 0.9s;
+  }*/
+
+  .animatelogo {
+    --animate-duration: 0s;
+  }
+  
+  .animatelogo:hover{
+    background-color: $brown;
+    transition: background-color 0.5s;
+  } 
