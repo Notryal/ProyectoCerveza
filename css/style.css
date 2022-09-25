@@ -161,13 +161,26 @@ a {
   --animate-duration: 800ms;
   --animate-delay: 0.9s;
 }*/
-.animatelogo {
+/*logo animation*/
+.logo {
+  position: relative;
   --animate-duration: 0s;
 }
 
-.animatelogo:hover {
-  background-color: #AF763F;
-  transition: background-color 0.5s;
+.logo img {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.logo .logohover {
+  display: none;
+}
+
+.logo:hover .logohover {
+  display: block;
 }
 
 .contact-box {
