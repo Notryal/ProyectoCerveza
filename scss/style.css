@@ -192,6 +192,10 @@ a {
   box-sizing: border-box;
 }
 
+.body-contact {
+  background-image: url(../assets/landscape-1511297205-portada-arizona.jpg);
+}
+
 .contact-title {
   text-align: center;
   margin-bottom: 30px;
