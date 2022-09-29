@@ -1,7 +1,4 @@
-* {
-  font-family: 'Montserrat', sans-serif;
-}
-
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 body {
   margin: 0;
   font-family: Helvetica, sans-serif;
@@ -188,13 +185,31 @@ a {
   display: block;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
+}
+
+.contact-title {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 25px;
+}
+
+.contact-title2 {
+  margin: 10px auto;
+}
+
 .contact-box {
   flex-wrap: wrap;
-  max-width: 700px;
-  margin: 50px auto;
-  padding: 40px;
-  border: 15px solid rgb(209, 149, 58);
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 30px;
+  border: 15px solid goldenrod;
   background-color: bisque;
+  box-shadow: 0 0 5px rgb(192, 143, 27);
 }
 
 input {
@@ -210,6 +225,12 @@ input {
 .contact-icons {
   display: flex;
   justify-content: space-around;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.contact-icons .fa {
+  font-size: 30px;
 }
 
 button {
@@ -223,4 +244,17 @@ button {
 
 button:hover {
   background-color: rgb(192, 143, 27);
+}
+
+.form {
+  font-size: 20px;
+}
+
+.form-items {
+  margin: 20px auto;
+}
+
+textarea {
+  margin: 20px auto;
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */
