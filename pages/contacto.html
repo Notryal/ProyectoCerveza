@@ -1,28 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../scss/style.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../assets/logo_muestra2.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <script src="https://kit.fontawesome.com/d0c5f8ad3b.js" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
-<body class="body">
-    <header class="header">
-        <header class="header fixed-bottom navbar-expand-lg">
-            <img class="" src="/assets/logo_muestra2.PNG" width="100px" height="100px" style="margin-top: -50px;margin-left: 10px;" alt="logo_muestra2">
-            <input class="menu-btn" type="checkbox" id="menu-btn" />
-            <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-            <ul class="menu">
-              <li><a href="/home.html">Inicio</a></li>
-              <li><a href="nosotros.html">Nosotros</a></li>
-              <li><a href="productos.html">Productos</a></li>
-              <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-          </header>
-    </header>
-    <main>
+<body class="body-contact">
+  <header>
+    <header class="header fixed-bottom navbar-expand-lg">
+        <div class="logo">
+            <a href="../home.html"><img class="animate__animated animate__fadeInDown animatelogo" src="../assets/logo_muestra2.PNG" width="100px" height="100px" style="margin-top: -50px;margin-left: 10px;" alt="logo_muestra2"></a>
+            <a href="../home.html"><img class="logohover" src="../assets/logo_muestra2 - al revez.PNG" width="100px" height="100px" style="margin-top: -50px;margin-left: 10px;" alt="logo_muestra2"></a>
+        </div>
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        <ul class="menu">
+          <li><a href="../home.html">Inicio</a></li>
+          <li><a href="/pages/nosotros.html">Nosotros</a></li>
+          <li><a href="/pages/productos.html">Productos</a></li>
+          <li><a href="/pages/contacto.html">Contacto</a></li>
+        </ul>
+      </header>
+</header>
+    <main class="background-image">
+
       <div class="contact-box">
         <div class="contact-title">
           <h1>NOS INTERESA TU OPINIÓN</h1>
@@ -37,16 +43,15 @@
             <p>11-5478-8974</p> 
           </div>
           <div>
-            <i class="fa-solid fa-location-dot"></i>
+            <i class="fa fa-solid fa-location-dot"></i>
             <p>Calle 123, Provincia2 <br> Calle 321, Provincia1</p>
           </div>
         </div>
         <div class="contact-title2">
           <h2>Queres contactarnos? </h2>           
         </div>
-        
-          <div class="form">
 
+        <div class="form">
             <div class="form-input">
               <div class="form-items">
                 <label>Nombre</label>
@@ -57,24 +62,29 @@
                 <input type="email" name="email" required>
               </div>
             </div>
-
+            <label>¿Tenes alguna pregunta o queres dejar algún comentario?</label>
             <div class="form-textbox">
-            
-              <label>¿Tenes alguna pregunta o queres dejar algún comentario?</label>
               <textarea name="question" id="" cols="50" rows="15"></textarea>
             </div>
-            
             <div class="form-btn">
               <button><h2>Enviar Mensaje</h2></button>
             </div>
+        </div>
 
-
-
-
-
-
-
+        <div class="social">
+          <div class="in-social">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-whatsapp"></i>
+            <i class="fa-brands fa-twitter"></i>
           </div>
+        </div>
+        
+
+
+
+
+      </div>
+          
     </main>
     <footer>
     </footer>
