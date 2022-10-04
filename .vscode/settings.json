@@ -4,15 +4,16 @@
         {
             "format": "expanded",
             "extensionName": ".css",
-            "savePath": null,
+            "savePath": "/css",
             "savePathReplacementPairs": null
         }
     ],
     "liveSassCompile.settings.autoprefix": [
+
     
     ],
     "liveSassCompile.settings.forceBaseDirectory": "",
-    "liveSassCompile.settings.generateMap": false,
+    "liveSassCompile.settings.generateMap": true,
     "liveSassCompile.settings.includeItems": [
     
     ],
