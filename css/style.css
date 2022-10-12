@@ -426,10 +426,16 @@ textarea {
 .titulo {
   text-align: center;
   color: black;
+<<<<<<< HEAD
   font-size: 25px;
   margin: 0;
   padding: 0;
   line-height: 0;
+=======
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+>>>>>>> 3556cf3ba8aa373aa30ab507aac01cebaee47e58
 }
 
 .descripcion {
