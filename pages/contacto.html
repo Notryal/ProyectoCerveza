@@ -10,7 +10,7 @@
     <script src="https://kit.fontawesome.com/d0c5f8ad3b.js" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
-<body class="body-contact">
+<body class="body-contact background-image">
   <header>
     <header class="header fixed-bottom navbar-expand-lg">
         <div class="logo">
@@ -27,66 +27,45 @@
         </ul>
       </header>
 </header>
-    <main class="background-image">
-
-      <div class="contact-box">
-        <div class="contact-title">
-          <h1>NOS INTERESA TU OPINIÓN</h1>
-        </div>
-        <div class="contact-icons">
-          <div>
-            <i class="fa fa-regular fa-envelope"></i>
-            <p>cerveza@gmail.com.ar</p>
-          </div>
-          <div>
-            <i class="fa fa-solid fa-mobile-screen-button"></i>
-            <p>11-5478-8974</p> 
-          </div>
-          <div>
-            <i class="fa fa-solid fa-location-dot"></i>
-            <p>Calle 123, Provincia2 <br> Calle 321, Provincia1</p>
-          </div>
-        </div>
-        <div class="contact-title2">
-          <h2>Queres contactarnos? </h2>           
-        </div>
-
-        <div class="form">
-            <div class="form-input">
-              <div class="form-items">
-                <label>Nombre</label>
-                <input type="text" name="first_name">
-              </div>
-              <div class="form-items">
-                <label>Email</label>
-                <input type="email" name="email" required>
-              </div>
-            </div>
-            <label>¿Tenes alguna pregunta o queres dejar algún comentario?</label>
-            <div class="form-textbox">
-              <textarea name="question" id="" cols="50" rows="15"></textarea>
-            </div>
-            <div class="form-btn">
-              <button><h2>Enviar Mensaje</h2></button>
-            </div>
-        </div>
-
-        <div class="social">
-          <div class="in-social">
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-whatsapp"></i>
-            <i class="fa-brands fa-twitter"></i>
-          </div>
-        </div>
-        
-
-
-
-
+  <main>
+    <div class="container">
+      <h1 class="contact-title">NOS INTERESA TU OPINIÓN</h1>
+      <div class="contact-icons">
+        <li class="icons-text">
+          <i class="fa fa-regular fa-envelope"></i>
+          <span>cerveza@gmail.com.ar</span>
+        </li>
+        <li class="icons-text">
+          <i class="fa fa-solid fa-mobile-screen-button"></i>
+          <p>11-5478-8974</p>   
+        </li>
+        <li class="icons-text">
+          <i class="fa fa-solid fa-location-dot"></i>
+          <p>Calle 123, Provincia2 <br> Calle 321, Provincia1</p>     
+        </li>
       </div>
-          
-    </main>
-    <footer>
-    </footer>
+
+      <h2 class="contact-title" >Queres contactarnos? </h2> 
+
+      <div class="form">
+          <p>Nombre</p>
+          <input type="text" name="first_name">
+          <p>Email</p>
+          <input type="email" name="email" required>
+          <p>¿Tenes alguna pregunta o queres dejar algún comentario?</p>
+          <textarea class="form-textbox" name="question" id="" cols="30" rows="10"></textarea>
+          <input class="submit-btn"type="submit" value="Enviar Mensaje">
+      </div>
+
+      <div class="social">
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-whatsapp"></i>
+          <i class="fa-brands fa-twitter"></i>
+      </div>
+
+    </div> 
+  </main>
+  <footer>
+  </footer>
 </body>
 </html>
