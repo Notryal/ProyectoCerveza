@@ -5,13 +5,13 @@ if (yourAge < 18)
 if (yourAge >= 18)
     alert("Disfrutá!");
 if (yourAge < 18)
-location.href = ("../home.html");
+location.href = ("../index.html");
 
 
 /* var yourAge = prompt("Please enter your age: ");
 if (yourAge < 19) {
    alert("Users under the age of 19 cannot access this page");
-   location.href = ("../home.html");
+   location.href = ("../index.html");
 }
 
 if (yourAge >= 19) {
@@ -23,7 +23,7 @@ if (yourAge >= 19) {
     }
 
     wishWell("Enjoy!", function(){
-        location.href = ("../home.html");
+        location.href = ("../index.html");
     });
 } */
 
