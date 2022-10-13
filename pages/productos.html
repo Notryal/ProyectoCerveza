@@ -44,12 +44,14 @@
           <div class="product-description">
             <Div>
               <span>Nuestras Cervezas</span>
-              <h1>Golden Ale</h1>
-              <p>Cerveza de alta tomabilidad con orientación hacia la malta.
+              <Div>
+              <h1 id="message">Golden Ale</h1>
+              <p id="description">Cerveza de alta tomabilidad con orientación hacia la malta.
                 Balanceada y limpia. De color amarillo brillante con buena
                 retención de espuma. Suave dulzor de malta y aromas a cereal.
                 Presencia de lúpulo, aunque el amargar es bajo.
                 El final es seco a ligeramente dulce-maltoso.</p>
+              </Div>
             </Div>
           </div>
   
@@ -62,19 +64,19 @@
   
               <div class="color-choose">
                 <div>
-                  <input data-image="Golden" type="radio" id="Golden" name="color" value="Golden" checked>
+                  <input data-image="Golden" type="radio" id="Golden" name="color" value="Golden" checked onclick=Golden();>
                   <label for="Golden"><span></span></label>
                 </div>
                 <div>
-                  <input data-image="Honey" type="radio" id="Honey" name="color" value="Honey">
+                  <input data-image="Honey" type="radio" id="Honey" name="color" value="Honey" onclick=Honey();>
                   <label for="Honey"><span></span></label>
                 </div>
                 <div>
-                  <input data-image="Red" type="radio" id="Red" name="color" value="Red">
+                  <input data-image="Red" type="radio" id="Red" name="color" value="Red" onclick=Red();;>
                   <label for="Red"><span></span></label>
                 </div>
                 <div>
-                  <input data-image="Black" type="radio" id="Black" name="color" value="Black">
+                  <input data-image="Black" type="radio" id="Black" name="color" value="Black" onclick=Black();>
                   <label for="Black"><span></span></label>
                 </div>
               </div>
