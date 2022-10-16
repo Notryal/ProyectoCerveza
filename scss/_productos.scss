@@ -6,11 +6,15 @@ html, body {
     font-family: 'Roboto', sans-serif;
   }
   
-  .container {
+  .containerprod {
     max-width: 1200px;
     margin: 0 auto;
     padding: 15px;
     display: flex;
+  }
+
+  .containerdesc {
+  height: 250px;
   }
   
   /* Columns */
@@ -31,7 +35,7 @@ html, body {
     position: absolute;
     left: 0;
     top: 0;
-    opacity: 0;
+    // opacity: 0;
     transition: all 0.3s ease;
   }
   
@@ -105,17 +109,17 @@ html, body {
     box-shadow: 0 1px 3px 0 rgba(0,0,0,0.33);
   }
   
-  .color-choose input[type="radio"]#red + label span {
-    background-color: #C91524;
+  .color-choose input[type="radio"]#Golden + label span {
+    background-color: yellow;
   }
-  .color-choose input[type="radio"]#blue + label span {
-    background-color: #314780;
+  .color-choose input[type="radio"]#Honey + label span {
+    background-color: rgb(238, 129, 39);
   }
-  .color-choose input[type="radio"]#black + label span {
-    background-color: #323232;
+  .color-choose input[type="radio"]#Red + label span {
+    background-color: red;
   }
-  .color-choose input[type="radio"]#white + label span {
-    background-color: #ffffff;
+  .color-choose input[type="radio"]#Black + label span {
+    background-color: black;
   }
   
   .color-choose input[type="radio"]:checked + label span {
@@ -202,7 +206,7 @@ html, body {
   
   /* Responsive */
   @media (max-width: 940px) {
-    .container {
+    .containerprod {
       flex-direction: column;
       margin-top: 60px;
     }
