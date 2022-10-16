@@ -270,7 +270,6 @@ textarea {
   cursor: pointer;
 }
 
-<<<<<<< HEAD
 button:hover {
   background-color: rgb(192, 143, 27);
 }
@@ -307,14 +306,14 @@ textarea {
 
 * {
   background-color: white;
-=======
+} 
 .slider-container {
   display: flex;
   width: 100%;
   height: 100%;
   overflow-x: scroll;
   scroll-snap-type: x mandatory;
->>>>>>> f7df5377b73c625febddeed9df26f89aa55dea96
+
 }
 
 .icon-cards {
@@ -498,17 +497,15 @@ body {
 .titulo {
   text-align: center;
   color: black;
-<<<<<<< HEAD
   font-size: 25px;
   margin: 0;
   padding: 0;
   line-height: 1;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-=======
+
   font-size: 20px;
   margin: 0;
   padding: 0;
->>>>>>> f7df5377b73c625febddeed9df26f89aa55dea96
 }
 
 .descripcion {
