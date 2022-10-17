@@ -273,15 +273,10 @@ textarea {
   font-size: xx-large;
   margin: 0 20px;
   cursor: pointer;
-  transition: all 0.5s ease;
 }
 
 .fa-brands:hover {
   color: goldenrod;
-}
-
-* {
-  background-color: white;
 }
 
 .icon-cards {
@@ -348,19 +343,6 @@ textarea {
     transform: translateZ(-35vw) rotateY(-360deg);
   }
 }
-html,
-body {
-  height: 100%;
-}
-
-body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  background: white;
-}
-
 .checkbox {
   position: relative;
   margin-top: 2rem;

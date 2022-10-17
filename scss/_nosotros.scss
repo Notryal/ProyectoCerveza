@@ -1,9 +1,3 @@
-// Cards Carousel
-// ----------------------------------------------
-*{
-    background-color: white;
-}
-
 .icon-cards {
     position: relative;
       width: 60vw;
@@ -14,8 +8,6 @@
     color: white;
       perspective: 1000px;
     transform-origin: center;
-  
-      // This is the element that rotates with the animation
   
       &__content {
           position: absolute;
@@ -30,8 +22,6 @@
         animation: carousel 8s infinite steps(1) forwards;
       }
       }
-  
-      // Individual cards
   
       &__item {
           position: absolute;
@@ -64,30 +54,12 @@
       }
   }
   
-  // Carousel animation
   
   @keyframes carousel {
       0%,  17.5%  { transform: translateZ(-35vw) rotateY(0); }
       27.5%, 45%  { transform: translateZ(-35vw) rotateY(-120deg); }
       55%, 72.5%  { transform: translateZ(-35vw) rotateY(-240deg); }
       82.5%, 100% { transform: translateZ(-35vw) rotateY(-360deg); }
-  }
-  
-  
-  // Demo only
-  // ----------------------------------------------
-  
-  html,
-  body {
-    height: 100%;
-  }
-  
-  body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    background: white;
   }
   
   // Checkbox
@@ -173,9 +145,7 @@
   .img {
      width: 120%;
      height: 120%;
-     position: center;
-    
-    
+     position: center; 
   }
 
 
@@ -229,5 +199,4 @@
 .detalle{
     padding: 0px;
     margin: 0%;
-    
 }
