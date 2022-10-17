@@ -250,14 +250,6 @@ textarea {
   resize: none;
 }
 
-.social {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  justify-content: space-around;
-  font-size: xx-large;
-}
-
 .submit-btn {
   align-self: center;
   font-size: large;
@@ -270,32 +262,16 @@ textarea {
   cursor: pointer;
 }
 
-button:hover {
-  background-color: rgb(192, 143, 27);
-}
-
-.form {
-  font-size: 20px;
-}
-
-.form-items {
-  margin: 20px auto;
-}
-
-textarea {
-  margin: 10px auto;
-  width: 100%;
-}
-
 .social {
   display: flex;
+  flex-direction: row;
   justify-content: center;
-  color: black;
+  justify-content: space-around;
 }
 
-.in-social {
+.fa-brands {
+  font-size: xx-large;
   margin: 0 20px;
-  font-size: 40px;
   cursor: pointer;
   transition: all 0.5s ease;
 }
@@ -306,14 +282,6 @@ textarea {
 
 * {
   background-color: white;
-} 
-.slider-container {
-  display: flex;
-  width: 100%;
-  height: 100%;
-  overflow-x: scroll;
-  scroll-snap-type: x mandatory;
-
 }
 
 .icon-cards {
@@ -502,10 +470,6 @@ body {
   padding: 0;
   line-height: 1;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-
-  font-size: 20px;
-  margin: 0;
-  padding: 0;
 }
 
 .descripcion {

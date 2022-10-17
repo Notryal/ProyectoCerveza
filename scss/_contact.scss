@@ -70,14 +70,6 @@ textarea{
   resize: none;
 }
 
-.social{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  justify-content: space-around;
-  font-size: xx-large;
-}
-
 .submit-btn{
   align-self: center;
   font-size: large;
@@ -89,3 +81,24 @@ textarea{
   width: 200px;
   cursor: pointer;
 }
+
+.social{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-content: space-around;
+}
+
+.fa-brands{
+  font-size: xx-large;
+  margin: 0 20px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+
+
+.fa-brands:hover{
+  color: goldenrod;
+}
+
