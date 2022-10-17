@@ -109,14 +109,11 @@
     }
     
     // Label
-    
     &__label {
       margin-left: 5px;
       vertical-align: middle;
       cursor: pointer;
     }
-    
-    // Animate it if checkbo is checked
     
     > input:checked ~ .checkbox__checkbox {
       border-color: transparent;
@@ -129,8 +126,6 @@
       }
     }
   }
-  
-  // Jelly checkbox animation
   
   @keyframes jelly {
     from { transform: scale(1, 1); }
@@ -166,9 +161,6 @@
     padding: 10px;
     flex-wrap: wrap;
     gap: 0px;
-    
-    
-
 }
 
 .titulo{
@@ -179,8 +171,6 @@
     padding: 0;
     line-height: 1;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
-    
-    
 }
 
 .descripcion{
@@ -193,8 +183,6 @@
 .deco{
     display:block;
     margin:auto;
-  
-    
 }
 .detalle{
     padding: 0px;

@@ -146,17 +146,10 @@ a {
     justify-content: flex-start;
   }
 }
-/* This only changes this particular animation duration */
 .animate__animated.animate__fadeInDown {
   --animate-duration: 2s;
 }
 
-/* This changes all the animations globally */
-/*:root {
-  --animate-duration: 800ms;
-  --animate-delay: 0.9s;
-}*/
-/*logo animation*/
 .logo {
   position: relative;
   --animate-duration: 0s;
@@ -195,7 +188,7 @@ a {
 .container {
   display: flex;
   flex-direction: column;
-  margin-top: 20px;
+  margin-top: 30px;
   margin: 10px auto;
   background-color: bisque;
   max-width: 800px;
@@ -233,6 +226,7 @@ a {
   display: flex;
   flex-direction: column;
   margin: 10px;
+  font-weight: bold;
 }
 
 .form > * {
@@ -469,14 +463,6 @@ textarea {
 .detalle {
   padding: 0px;
   margin: 0%;
-}
-
-/* Basic Styling */
-html, body {
-  height: 100%;
-  width: 100%;
-  margin: 0;
-  font-family: "Roboto", sans-serif;
 }
 
 .containerprod {
