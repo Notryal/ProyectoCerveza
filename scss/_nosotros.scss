@@ -89,52 +89,6 @@
     flex-direction: column;
     background: white;
   }
-  
-  // Checkbox
-  
-  .checkbox {
-    position: relative;
-    margin-top: 2rem;
-    font-size: .9rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: #F47956;
-    transition: color .3s ease;
-    user-select: none;
-    
-    &:hover {
-      color: #F7A95A;
-    }
-  
-    // Checkbox
-    
-    &__checkbox {
-      position: relative;
-      top: 0;
-      width: 1.0625rem;
-      height: 1.0625rem;
-      background: white;
-      border: 1px solid currentColor;
-      border-radius: 4px;
-      vertical-align: middle;
-      transition: background 0.1s ease;
-      cursor: pointer;
-      
-      &::after {
-        content: '';
-        position: absolute;
-        top: 1px;
-        left: 5px;
-        width: 5px;
-        height: 11px;
-        opacity: 0;
-        transform: rotate(45deg) scale(0);
-        border-right: 2px solid #fff;
-        border-bottom: 2px solid #fff;
-        transition: all 0.3s ease;
-        transition-delay: 0.15s;
-      }
-    }
     
     // Label
     
