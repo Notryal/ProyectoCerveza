@@ -146,17 +146,10 @@ a {
     justify-content: flex-start;
   }
 }
-/* This only changes this particular animation duration */
 .animate__animated.animate__fadeInDown {
   --animate-duration: 2s;
 }
 
-/* This changes all the animations globally */
-/*:root {
-  --animate-duration: 800ms;
-  --animate-delay: 0.9s;
-}*/
-/*logo animation*/
 .logo {
   position: relative;
   --animate-duration: 0s;
@@ -195,7 +188,7 @@ a {
 .container {
   display: flex;
   flex-direction: column;
-  margin-top: 20px;
+  margin-top: 30px;
   margin: 10px auto;
   background-color: bisque;
   max-width: 800px;
@@ -233,6 +226,7 @@ a {
   display: flex;
   flex-direction: column;
   margin: 10px;
+  font-weight: bold;
 }
 
 .form > * {
@@ -250,14 +244,6 @@ textarea {
   resize: none;
 }
 
-.social {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  justify-content: space-around;
-  font-size: xx-large;
-}
-
 .submit-btn {
   align-self: center;
   font-size: large;
@@ -270,9 +256,82 @@ textarea {
   cursor: pointer;
 }
 
+<<<<<<< HEAD
 @media only screen and (min-width: 700px) {
   * {
     background-color: white;
+=======
+.social {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-content: space-around;
+}
+
+.fa-brands {
+  font-size: xx-large;
+  margin: 0 20px;
+  cursor: pointer;
+}
+
+.fa-brands:hover {
+  color: goldenrod;
+}
+
+.icon-cards {
+  position: relative;
+  width: 60vw;
+  height: 40vw;
+  max-width: 380px;
+  max-height: 250px;
+  margin: 0;
+  color: white;
+  perspective: 1000px;
+  transform-origin: center;
+}
+.icon-cards__content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-origin: center;
+  transform-style: preserve-3d;
+  transform: translateZ(-30vw) rotateY(0);
+  animation: carousel 10s infinite cubic-bezier(0.77, 0, 0.175, 1) forwards;
+}
+.icon-cards__content.step-animation {
+  animation: carousel 8s infinite steps(1) forwards;
+}
+.icon-cards__item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 60vw;
+  height: 40vw;
+  max-width: 380px;
+  max-height: 250px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  transform-origin: center;
+}
+.icon-cards__item:nth-child(1) {
+  background: #FDD94F;
+  transform: rotateY(0) translateZ(35vw);
+}
+.icon-cards__item:nth-child(2) {
+  background: #8b923f;
+  transform: rotateY(120deg) translateZ(35vw);
+}
+.icon-cards__item:nth-child(3) {
+  background: #fbe648;
+  transform: rotateY(240deg) translateZ(35vw);
+}
+
+@keyframes carousel {
+  0%, 17.5% {
+    transform: translateZ(-35vw) rotateY(0);
+>>>>>>> c4e82263971b8b2f3f9ec85660b8f32e1ee237db
   }
   .icon-cards {
     position: relative;
@@ -297,6 +356,7 @@ textarea {
   .icon-cards__content.step-animation {
     animation: carousel 8s infinite steps(1) forwards;
   }
+<<<<<<< HEAD
   .icon-cards__item {
     position: absolute;
     top: 0;
@@ -342,6 +402,66 @@ textarea {
   html,
 body {
     height: 100%;
+=======
+}
+.checkbox {
+  position: relative;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #F47956;
+  transition: color 0.3s ease;
+  user-select: none;
+}
+.checkbox:hover {
+  color: #F7A95A;
+}
+.checkbox__checkbox {
+  position: relative;
+  top: 0;
+  width: 1.0625rem;
+  height: 1.0625rem;
+  background: white;
+  border: 1px solid currentColor;
+  border-radius: 4px;
+  vertical-align: middle;
+  transition: background 0.1s ease;
+  cursor: pointer;
+}
+.checkbox__checkbox::after {
+  content: "";
+  position: absolute;
+  top: 1px;
+  left: 5px;
+  width: 5px;
+  height: 11px;
+  opacity: 0;
+  transform: rotate(45deg) scale(0);
+  border-right: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  transition: all 0.3s ease;
+  transition-delay: 0.15s;
+}
+.checkbox__label {
+  margin-left: 5px;
+  vertical-align: middle;
+  cursor: pointer;
+}
+.checkbox > input:checked ~ .checkbox__checkbox {
+  border-color: transparent;
+  background: #F47956;
+  animation: jelly 0.6s ease;
+}
+.checkbox > input:checked ~ .checkbox__checkbox:after {
+  opacity: 1;
+  transform: rotate(45deg) scale(1);
+}
+
+@keyframes jelly {
+  from {
+    transform: scale(1, 1);
+>>>>>>> c4e82263971b8b2f3f9ec85660b8f32e1ee237db
   }
   body {
     display: flex;
@@ -509,12 +629,59 @@ body {
     margin-left: 20px;
   }
 }
+<<<<<<< HEAD
 /* Basic Styling */
 html, body {
   height: 100%;
   width: 100%;
   margin: 0;
   font-family: "Roboto", sans-serif;
+=======
+
+.columnas {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-column-gap: 5px;
+  grid-row-gap: 1em;
+  grid-template-rows: 50% 50%;
+  margin-left: 60px;
+}
+
+.title-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+  flex-wrap: wrap;
+  gap: 0px;
+}
+
+.titulo {
+  text-align: center;
+  color: black;
+  font-size: 25px;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.descripcion {
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 30px;
+  text-align: justify;
+}
+
+.deco {
+  display: block;
+  margin: auto;
+}
+
+.detalle {
+  padding: 0px;
+  margin: 0%;
+>>>>>>> c4e82263971b8b2f3f9ec85660b8f32e1ee237db
 }
 
 .containerprod {
