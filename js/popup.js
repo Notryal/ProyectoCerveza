@@ -1,3 +1,5 @@
+
+/*
 var yourAge = prompt("Por favor ingresá tu edad: ")
 if (yourAge < 18)
    alert("Usuarios menores a 18 años no pueden acceder a esta página");
@@ -6,7 +8,7 @@ if (yourAge >= 18)
     alert("Disfrutá!");
 if (yourAge < 18)
 location.href = ("../index.html");
-
+*/
 
 /* var yourAge = prompt("Please enter your age: ");
 if (yourAge < 19) {
