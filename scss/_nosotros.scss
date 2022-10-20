@@ -1,12 +1,5 @@
-<<<<<<< HEAD
 @media only screen and (min-width: 700px) { 
 
-*{
-    background-color: white;
-}
-
-=======
->>>>>>> c4e82263971b8b2f3f9ec85660b8f32e1ee237db
 .icon-cards {
     position: relative;
       width: 90vw;
@@ -65,8 +58,6 @@
           }
       }
   }
-  
-  
   @keyframes carousel {
       0%,  17.5%  { transform: translateZ(-35vw) rotateY(0); }
       27.5%, 45%  { transform: translateZ(-35vw) rotateY(-120deg); }
@@ -150,19 +141,11 @@
   }
   
   .img {
-<<<<<<< HEAD
      width: 180%;
      height: 180%;
      position: center;
-    margin-top: 100px;
-    
-=======
-     width: 120%;
-     height: 120%;
-     position: center; 
->>>>>>> c4e82263971b8b2f3f9ec85660b8f32e1ee237db
+    margin-top: 100px; 
   }
-
 
 .columnas{
     display: grid;
@@ -173,7 +156,6 @@
     margin-top: 30px;
     margin-right: 60px;
     align-items:flex-start;
- 
 
 }
 .title-flex{
@@ -206,20 +188,15 @@
 .deco{
     display:block;
     margin:auto;
-  
-    
 }
 .detalle{
     padding: 0px;
     margin: 0%;
-    
 }
 
 }
 
 @media only screen and (max-width: 1000px) {
-
-
   .titulo{
     text-align: center;
     color: black;
@@ -246,28 +223,20 @@
 .detalle{
     padding: 0px;
     margin: 0%;
-<<<<<<< HEAD
-    
 }
 
 
 .columnas{
   display: flex;
   flex-direction: column-reverse;
-
-
 }
 
 .img{
   
   height: 400px;
   width: 400px;
- 
   margin-left: 20px;
 }
 
 
  }
-=======
-}
->>>>>>> c4e82263971b8b2f3f9ec85660b8f32e1ee237db

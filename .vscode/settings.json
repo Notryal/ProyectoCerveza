@@ -5,19 +5,6 @@
             "format": "expanded",
             "extensionName": ".css",
             "savePath": "/css",
-            "savePathReplacementPairs": null
         }
     ],
-    "liveSassCompile.settings.autoprefix": [
-    
-
-    
-    ],
-    "liveSassCompile.settings.forceBaseDirectory": "",
-    "liveSassCompile.settings.generateMap": true,
-    "liveSassCompile.settings.includeItems": [
-    
-    ],
-    "liveSassCompile.settings.rootIsWorkspace": null,
-    "liveSassCompile.settings.showAnnouncements": null
 }
