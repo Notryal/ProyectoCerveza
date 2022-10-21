@@ -48,23 +48,21 @@
 
       <h2 class="contact-title" >Queres contactarnos? </h2> 
 
-      <div id="error">
-
-      </div>
+      <div id="error"></div>
 
       <div class="form">
-        <form action="" id="myform" onsubmit = "return validate();">
+        <form action="" id="myform" onsubmit = "validar();">
           <label>
             Nombre
-            <input id="nombre" placeholder="TuNombre" type="text" name="name" required>
+            <input id="nombre" placeholder="TuNombre" type="text" name="name" >
           </label>
           <label>
             Email
-            <input id="email" placeholder="TuEmail@email.com" type="email" name="email" required>
+            <input id="email" placeholder="TuEmail@email.com" type="email" name="email" >
           </label>
           <label>
             ¿Tenes alguna pregunta o queres dejar algún comentario?
-            <textarea id="mensaje" class="form-textbox" name="mensaje" required></textarea>
+            <textarea id="mensaje" class="form-textbox" name="mensaje" ></textarea>
           </label>
           <button class="submit-btn" type="input">Enviar Mensaje</button>        
         </form>

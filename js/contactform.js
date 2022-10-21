@@ -1,32 +1,28 @@
 function validar(){
-    var nombre = document.getElementById("nombre").value;
-    var email = document.getElementById("email").value;
-    var mensaje = document.getElementById("mensaje").value;
-    var error = document.getElementById("error").value;
+    const nombre = document.getElementById("nombre");
+    const email = document.getElementById("email");
+    const mensaje = document.getElementById("mensaje");
+    const error = document.getElementById("error");
 
     error.style.padding = "10px";
-
     var text;
 
-    if(nombre.length < 5){
-        text = "Por favor ingresa un nombre correcto";
-        error.innerHTML = text;
-        return false;
+    if(nombre.length == 0){
+      text = "Ingresar un nombre";
+      error.innerHTML = text;
+      return false;
+    }
+    if(email.length < 6){
+      text = "Por favor ingresar un mail valido";
+      error.innerHTML = text;
+      return false;
+    }
+    if(mensaje.length < 20){
+      text = "Ingresar un mensaje mas largo";
+      error.innerHTML = text;
+      return false;
     }
 
-    if(email.indexOf("@") == -1 || email.length < 6){
-        text = "Por favor ingresa un email correcto";
-        error.innerHTML = text;
-        return false;
-    }
-    
-    if(message.length <= 20){
-        text = "Tu mensaje es muy corto!";
-        error.innerHTML = text;
-        return false;
-      }
-    
-    alert("Mensaje enviado! Muchisimas gracias!");
+    alert("Form Submitted Successfully!");
     return true;
-
 }
