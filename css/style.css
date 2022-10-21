@@ -783,4 +783,36 @@ textarea {
     width: 220px;
     top: -85px;
   }
+}
+.mb_parallax_container {
+  height: 100vh;
+  width: 100vw;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#mb_parallax_one {
+  background-image: url(../assets/prodimages/rubia.png);
+}
+
+#mb_parallax_two {
+  background-image: url(../assets/prodimages/roja2.png);
+}
+
+#mb_parallax_three {
+  background-image: url(../assets/prodimages/roja.png);
+}
+
+#mb_parallax_four {
+  background-image: url(../assets/prodimages/honey.png);
+}
+
+#mb_parallax_five {
+  background-image: url(../assets/prodimages/roja3.png);
+}
+
+#mb_parallax_six {
+  background-image: url(../assets/prodimages/negra.png);
 }/*# sourceMappingURL=style.css.map */

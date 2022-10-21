@@ -71,7 +71,7 @@ if (yourAge >= 19) {
 
 
 //javaScrip de la seccion nosotros
-
+/*
 let activeIndex = 0
 let limit = 0
 let disabled = false
@@ -230,3 +230,4 @@ $(() => {
     init();
 });
 
+*/
