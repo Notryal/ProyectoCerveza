@@ -1,8 +1,19 @@
+  .backgroundproduct{
+    background-image: url(../assets/landscape-1511297205-portada-arizona.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh ;
+
+  }
+
   .containerprod {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 15px;
     display: flex;
+    max-width: 1100px;
+    margin: 50px auto;
+    background-color: whitesmoke;
+    border: 10px solid goldenrod;
+    padding: 10px;
+    box-shadow:0 0 5px rgb(192, 143, 27) ;
   }
 
   .containerdesc {
@@ -11,13 +22,14 @@
   
   /* Columns */
   .left-column {
-    width: 65%;
+    width: 55%;
     position: relative;
   }
   
   .right-column {
     width: 35%;
     margin-top: 60px;
+    padding: 10px;
   }
   
   

@@ -7,7 +7,16 @@
     background-position: center;
   }
   
-
+  .mb_parallax_overlay {
+    height: 60vh;
+    width: 45vw;
+    background-color: black;
+    opacity: .9;
+    font-size: large;
+    padding-top: 10vh;
+    color: white;
+    text-align: center;
+  }
   
   #mb_parallax_one {
     background-image: url(../assets/prodimages/rubia.png);
