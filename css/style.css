@@ -55,10 +55,7 @@ a {
   display: inline-block;
   padding: 28px 20px;
   position: relative;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  user-select: none;
 }
 
 .header .menu-icon .navicon {
@@ -142,7 +139,9 @@ a {
 
 @media (min-width: 992px) {
   .navbar-expand-lg {
+    -ms-flex-flow: row nowrap;
     flex-flow: row nowrap;
+    -ms-flex-pack: start;
     justify-content: flex-start;
   }
 }
@@ -307,12 +306,10 @@ textarea {
     transform-origin: center;
     transform-style: preserve-3d;
     transform: translateZ(-30vw) rotateY(0);
-    -webkit-animation: carousel 10s infinite cubic-bezier(0.77, 0, 0.175, 1) forwards;
-            animation: carousel 10s infinite cubic-bezier(0.77, 0, 0.175, 1) forwards;
+    animation: carousel 10s infinite cubic-bezier(0.77, 0, 0.175, 1) forwards;
   }
   .icon-cards__content.step-animation {
-    -webkit-animation: carousel 8s infinite steps(1) forwards;
-            animation: carousel 8s infinite steps(1) forwards;
+    animation: carousel 8s infinite steps(1) forwards;
   }
   .icon-cards__item {
     position: absolute;
@@ -330,8 +327,6 @@ textarea {
   }
   .icon-cards__item:nth-child(1) {
     width: auto;
-    height: -webkit-max-content;
-    height: -moz-max-content;
     height: max-content;
     background: transparent;
     transform: rotateY(0) translateZ(35vw);
@@ -343,20 +338,6 @@ textarea {
   .icon-cards__item:nth-child(3) {
     background: transparent;
     transform: rotateY(240deg) translateZ(35vw);
-  }
-  @-webkit-keyframes carousel {
-    0%, 17.5% {
-      transform: translateZ(-35vw) rotateY(0);
-    }
-    27.5%, 45% {
-      transform: translateZ(-35vw) rotateY(-120deg);
-    }
-    55%, 72.5% {
-      transform: translateZ(-35vw) rotateY(-240deg);
-    }
-    82.5%, 100% {
-      transform: translateZ(-35vw) rotateY(-360deg);
-    }
   }
   @keyframes carousel {
     0%, 17.5% {
@@ -380,10 +361,7 @@ textarea {
     text-transform: uppercase;
     color: white;
     transition: color 0.3s ease;
-    -webkit-user-select: none;
-       -moz-user-select: none;
-        -ms-user-select: none;
-            user-select: none;
+    user-select: none;
   }
   .checkbox:hover {
     color: white;
@@ -422,35 +400,11 @@ textarea {
   .checkbox > input:checked ~ .checkbox__checkbox {
     border-color: transparent;
     background: white;
-    -webkit-animation: jelly 0.6s ease;
-            animation: jelly 0.6s ease;
+    animation: jelly 0.6s ease;
   }
   .checkbox > input:checked ~ .checkbox__checkbox:after {
     opacity: 1;
     transform: rotate(45deg) scale(1);
-  }
-  @-webkit-keyframes jelly {
-    from {
-      transform: scale(1, 1);
-    }
-    30% {
-      transform: scale(1.25, 0.75);
-    }
-    40% {
-      transform: scale(0.75, 1.25);
-    }
-    50% {
-      transform: scale(1.15, 0.85);
-    }
-    65% {
-      transform: scale(0.95, 1.05);
-    }
-    75% {
-      transform: scale(1.05, 0.95);
-    }
-    to {
-      transform: scale(1, 1);
-    }
   }
   @keyframes jelly {
     from {
@@ -513,8 +467,7 @@ textarea {
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     margin: 30px;
     text-align: justify;
-    -webkit-margin-after: 70px;
-            margin-block-end: 70px;
+    margin-block-end: 70px;
   }
   .deco {
     display: block;
@@ -794,25 +747,25 @@ textarea {
 }
 
 #mb_parallax_one {
-  background-image: url(../assets/prodimages/rubia.png);
+  background-image: url(../assets/prodimages/rubia2.png);
 }
 
 #mb_parallax_two {
-  background-image: url(../assets/prodimages/roja2.png);
+  background-image: url(../assets/prodimages/rojaB.png);
 }
 
 #mb_parallax_three {
-  background-image: url(../assets/prodimages/roja.png);
+  background-image: url(../assets/prodimages/rojaA.png);
 }
 
 #mb_parallax_four {
-  background-image: url(../assets/prodimages/honey.png);
+  background-image: url(../assets/prodimages/honey2.png);
 }
 
 #mb_parallax_five {
-  background-image: url(../assets/prodimages/roja3.png);
+  background-image: url(../assets/prodimages/rojac.png);
 }
 
 #mb_parallax_six {
-  background-image: url(../assets/prodimages/negra.png);
+  background-image: url(../assets/prodimages/negra2.png);
 }/*# sourceMappingURL=style.css.map */
