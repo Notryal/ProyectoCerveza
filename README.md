@@ -8,4 +8,4 @@ El sitio está compuesto por:
 
 https://notryal.github.io/ProyectoCerveza/
 
-Cada pagina se le agrega estilo, para facilitar a la hora de trabajar decidimos usar SASS para que quede mas organizado y para ayudarnos  a compinar todos los css en uno solo sin tener que estar modificandolo constantemente.
+Cada pagina se le agrega estilo, para facilitar a la hora de trabajar decidimos usar SASS para que quede mas organizado y para ayudarnos a compaginar todos los css en uno solo sin tener que estar modificandolo constantemente.
