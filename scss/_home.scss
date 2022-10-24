@@ -1,26 +1,14 @@
-.mb_parallax_container {
-    height: 100vh !important;
-    width: 100vw;
-    background-attachment: fixed;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: left;
-    background-color: #EEEEEE;
-  }
-  
-  .mb_parallax_overlay {
-    // height: 60vh;
-    // width: 45vw;
-    // background-color: black;
-    opacity: .9;
-    font-size: large;
-    padding-top: 10vh;
-    color: white;
-    text-align: center;
-  }
+.titulohome{
+  background-color: #EEEEEE;
+  text-align: center;
+  color: $brown;
+  padding: 20px;
+  z-index: 2;
+}
   
   #mb_parallax_one {
     background-image: url(../assets/prodimages/rubia2.png);
+    z-index: 1;
   }
   #mb_parallax_two {
     background-image: url(../assets/prodimages/rojaB.png);
@@ -39,3 +27,91 @@
   }
   
   
+  @media (min-width: 30em) {
+    .col2{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      height: 100vh;
+    }
+     .secundario {
+      width: 50%;
+      opacity: 0.5;
+    }
+ 
+    .principal {
+     width: 50%;
+     background-color: #EEEEEE 0.2; 
+   }
+   .mb_parallax_container {
+    height: 100vh;
+    width: 100vw;
+    background-attachment: fixed;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position:left;
+    background-color: #EEEEEE;
+    background-attachment: fixed;
+    padding-top: 0vh;
+  }
+  
+  .mb_parallax_overlay {
+    // height: 60vh;
+    // width: 45vw;
+    opacity: 1;
+    font-size: large;
+    padding: 10vh;
+    color: $brown;
+    text-align: center;
+  }
+
+  .estilo-title {
+    font-size: 60px;
+    line-height: 60px;
+}
+ }
+
+  @media (min-width: 992px) {
+   .col2{
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     height: 100vh;
+   }
+    .secundario {
+     width: 50%;
+     opacity: 0.5;
+   }
+
+   .principal {
+    width: 50%;
+    background-color: #EEEEEE 0.2; 
+  }
+
+  .mb_parallax_container {
+    height: 100vh;
+    width: 100vw;
+    background-attachment: fixed;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-color: #EEEEEE;
+    background-attachment: fixed;
+  }
+  
+  .mb_parallax_overlay {
+    // height: 60vh;
+    // width: 45vw;
+    // background-color: black;
+    opacity: 1;
+    font-size: large;
+    padding: 10vh;
+    color: $brown;
+    text-align: center;
+  }
+
+  .estilo-title {
+    font-size: 60px;
+    line-height: 60px;
+}
+}
