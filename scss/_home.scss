@@ -1,16 +1,17 @@
 .mb_parallax_container {
-    height: 100vh;
+    height: 100vh !important;
     width: 100vw;
     background-attachment: fixed;
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: left;
+    background-color: #EEEEEE;
   }
   
   .mb_parallax_overlay {
-    height: 60vh;
-    width: 45vw;
-    background-color: black;
+    // height: 60vh;
+    // width: 45vw;
+    // background-color: black;
     opacity: .9;
     font-size: large;
     padding-top: 10vh;
