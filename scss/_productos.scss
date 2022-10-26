@@ -78,7 +78,7 @@
   
   /* Product Configuration */
   .product-color span,
-  .cable-config span {
+  .beer-config span {
     font-size: 14px;
     font-weight: 400;
     color: #86939E;
@@ -133,12 +133,12 @@
     background-position: center;
   }
   
-  /* Cable Configuration */
-  .cable-choose {
+  /* Beer Configuration */
+  .beer-choose {
     margin-bottom: 20px;
   }
   
-  .cable-choose button {
+  .beer-choose button {
     border: 2px solid #E1E8EE;
     border-radius: 6px;
     padding: 13px 20px;
@@ -149,19 +149,19 @@
     transition: all .5s;
   }
   
-  .cable-choose button:hover,
-  .cable-choose button:active,
-  .cable-choose button:focus {
+  .beer-choose button:hover,
+  .beer-choose button:active,
+  .beer-choose button:focus {
     border: 2px solid #86939E;
     outline: none;
   }
   
-  .cable-config {
+  .beer-config {
     border-bottom: 1px solid #E1E8EE;
     margin-bottom: 20px;
   }
   
-  .cable-config a {
+  .beer-config a {
     color: #358ED7;
     text-decoration: none;
     font-size: 12px;
@@ -169,7 +169,7 @@
     margin: 10px 0;
     display: inline-block;
   }
-  .cable-config a:before {
+  .-config a:before {
     content: "?";
     height: 15px;
     width: 15px;
