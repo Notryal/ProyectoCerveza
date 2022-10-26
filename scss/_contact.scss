@@ -1,7 +1,6 @@
 *{
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
   outline: none;
   font-family: 'Montserrat', sans-serif;
 } 
@@ -11,6 +10,8 @@
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 100vh ;
+  
+
 }
 
 .container{
@@ -22,6 +23,7 @@
   border: 10px solid goldenrod;
   padding: 10px;
   box-shadow:0 0 5px rgb(192, 143, 27) ;
+
 }
 
 .contact-title{
@@ -54,6 +56,7 @@ margin: 20px 10px 10px;
   flex-direction: column;
   font-weight: bold;
   text-align: center;
+  
 }
 
 input{
