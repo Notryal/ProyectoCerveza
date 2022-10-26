@@ -232,7 +232,6 @@
 }
 
 .img{
-  
   height: 400px;
   width: 400px;
   margin-left: 20px;
@@ -240,3 +239,17 @@
 
 
  }
+
+ .mapouter{
+  position:relative;
+  text-align:right;
+  height:500px;
+  width:600px;
+}
+
+.gmap_canvas {
+  overflow:hidden;
+  background:none;
+  height:500px;
+  width:600px;
+}
