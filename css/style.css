@@ -53,12 +53,10 @@ a {
 .header .menu-icon {
   cursor: pointer;
   display: inline-block;
+  float: right;
   padding: 28px 20px;
   position: relative;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  user-select: none;
 }
 
 .header .menu-icon .navicon {
@@ -142,7 +140,9 @@ a {
 
 @media (min-width: 992px) {
   .navbar-expand-lg {
+    -ms-flex-flow: row nowrap;
     flex-flow: row nowrap;
+    -ms-flex-pack: start;
     justify-content: flex-start;
   }
 }
@@ -188,12 +188,13 @@ a {
 .container {
   flex-direction: column;
   display: flex;
-  max-width: 550px;
+  max-width: 750px;
   margin: 10px auto;
   background-color: bisque;
   border: 10px solid goldenrod;
   padding: 10px;
   box-shadow: 0 0 5px rgb(192, 143, 27);
+  margin-top: 80px;
 }
 
 .contact-title {
@@ -244,7 +245,7 @@ label {
 
 textarea {
   width: 100%;
-  height: 80px;
+  height: 90px;
   margin: 10px;
   resize: none;
 }
@@ -291,6 +292,28 @@ textarea {
   transition: all 0.5s ease;
 }
 
+.columnas {
+  text-align: center;
+  font-weight: 40;
+  display: grid;
+  grid-template-columns: 400px 400px;
+  grid-template-columns: 0.8fr 0.8fr;
+  grid-gap: 30px;
+  grid-column: 2000px;
+  justify-content: space-between;
+}
+
+.columnas h3 {
+  color: black;
+  font-size: 1.5rem;
+  text-align: center;
+  font-style: italic; /*modificar estilo italico */
+  font-weight: bold; /*modificar grosor linea */
+  font-family: "Taviraj", serif; /*modificar familia tipografica*/
+  text-transform: uppercase;
+  list-style-type: none;
+}
+
 @media only screen and (min-width: 700px) {
   .icon-cards {
     position: relative;
@@ -310,12 +333,10 @@ textarea {
     transform-origin: center;
     transform-style: preserve-3d;
     transform: translateZ(-30vw) rotateY(0);
-    -webkit-animation: carousel 10s infinite cubic-bezier(0.77, 0, 0.175, 1) forwards;
-            animation: carousel 10s infinite cubic-bezier(0.77, 0, 0.175, 1) forwards;
+    animation: carousel 10s infinite cubic-bezier(0.77, 0, 0.175, 1) forwards;
   }
   .icon-cards__content.step-animation {
-    -webkit-animation: carousel 8s infinite steps(1) forwards;
-            animation: carousel 8s infinite steps(1) forwards;
+    animation: carousel 8s infinite steps(1) forwards;
   }
   .icon-cards__item {
     position: absolute;
@@ -333,8 +354,6 @@ textarea {
   }
   .icon-cards__item:nth-child(1) {
     width: auto;
-    height: -webkit-max-content;
-    height: -moz-max-content;
     height: max-content;
     background: transparent;
     transform: rotateY(0) translateZ(35vw);
@@ -346,20 +365,6 @@ textarea {
   .icon-cards__item:nth-child(3) {
     background: transparent;
     transform: rotateY(240deg) translateZ(35vw);
-  }
-  @-webkit-keyframes carousel {
-    0%, 17.5% {
-      transform: translateZ(-35vw) rotateY(0);
-    }
-    27.5%, 45% {
-      transform: translateZ(-35vw) rotateY(-120deg);
-    }
-    55%, 72.5% {
-      transform: translateZ(-35vw) rotateY(-240deg);
-    }
-    82.5%, 100% {
-      transform: translateZ(-35vw) rotateY(-360deg);
-    }
   }
   @keyframes carousel {
     0%, 17.5% {
@@ -383,10 +388,7 @@ textarea {
     text-transform: uppercase;
     color: white;
     transition: color 0.3s ease;
-    -webkit-user-select: none;
-       -moz-user-select: none;
-        -ms-user-select: none;
-            user-select: none;
+    user-select: none;
   }
   .checkbox:hover {
     color: white;
@@ -425,35 +427,11 @@ textarea {
   .checkbox > input:checked ~ .checkbox__checkbox {
     border-color: transparent;
     background: white;
-    -webkit-animation: jelly 0.6s ease;
-            animation: jelly 0.6s ease;
+    animation: jelly 0.6s ease;
   }
   .checkbox > input:checked ~ .checkbox__checkbox:after {
     opacity: 1;
     transform: rotate(45deg) scale(1);
-  }
-  @-webkit-keyframes jelly {
-    from {
-      transform: scale(1, 1);
-    }
-    30% {
-      transform: scale(1.25, 0.75);
-    }
-    40% {
-      transform: scale(0.75, 1.25);
-    }
-    50% {
-      transform: scale(1.15, 0.85);
-    }
-    65% {
-      transform: scale(0.95, 1.05);
-    }
-    75% {
-      transform: scale(1.05, 0.95);
-    }
-    to {
-      transform: scale(1, 1);
-    }
   }
   @keyframes jelly {
     from {
@@ -516,8 +494,7 @@ textarea {
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     margin: 30px;
     text-align: justify;
-    -webkit-margin-after: 70px;
-            margin-block-end: 70px;
+    margin-block-end: 70px;
   }
   .deco {
     display: block;
