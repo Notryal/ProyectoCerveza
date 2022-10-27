@@ -4,7 +4,7 @@ const options = {
 		'Content-Type': 'application/json',
     }
 };
-var API_KITCHEN = 'https://api.spoonacular.com/recipes/random?apiKey=0d82084a9a464a09af441a26b6c37deb';
+var API_KITCHEN = 'https://api.spoonacular.com/recipes/random?apiKey=fdb1d161788541bfa2bca72bfcf37e14';
 function fetchData(){
 	console.log("hias234")
     fetch(API_KITCHEN, options) //La api trae una receta random!
@@ -35,3 +35,4 @@ function fetchData(){
 		.catch(err => console.error(err));
 }
 fetchData();
+
