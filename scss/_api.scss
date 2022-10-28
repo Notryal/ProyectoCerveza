@@ -1,0 +1,35 @@
+#gif-wrap {
+    flex-direction: column;
+    display:flex;
+    max-width: 750px;
+    max-height: 500px;
+    margin: 10px auto;
+}
+
+#newgif{
+	position: inherit;
+	padding: .75rem 2.5rem;
+	font-weight: 600;
+	background: #424242;
+    margin-top: 10px;
+	color: #fff;
+	border-radius: 30px;
+	border: 0;
+	font-size: 14px;
+	top: .5rem;
+	left: .5rem;
+	transition: background .15s ease;
+	cursor: pointer;
+	&:hover {
+		background: #626262;
+	}
+}
+
+#bodyapi{
+    background-color: black;
+}
+
+#apiText{
+    color: #fff;
+    text-align: center;
+}
