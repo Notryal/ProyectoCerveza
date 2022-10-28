@@ -3,6 +3,7 @@
   padding: 0;
   outline: none;
   font-family: 'Montserrat', sans-serif;
+  box-sizing: border-box;
 } 
 
 .background-image{
@@ -81,7 +82,7 @@ textarea{
 .submit-btn{
   width: 200px;
   padding: 12px 20px;
-  margin-bottom: 10px;
+  margin: 10px;
   font-size: large;
   background-color: goldenrod;
   color: black;

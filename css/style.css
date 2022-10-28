@@ -53,10 +53,12 @@ a {
 .header .menu-icon {
   cursor: pointer;
   display: inline-block;
-  float: right;
   padding: 28px 20px;
   position: relative;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .header .menu-icon .navicon {
@@ -140,9 +142,7 @@ a {
 
 @media (min-width: 992px) {
   .navbar-expand-lg {
-    -ms-flex-flow: row nowrap;
     flex-flow: row nowrap;
-    -ms-flex-pack: start;
     justify-content: flex-start;
   }
 }
@@ -176,6 +176,7 @@ a {
   padding: 0;
   outline: none;
   font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
 }
 
 .background-image {
@@ -253,7 +254,7 @@ textarea {
 .submit-btn {
   width: 200px;
   padding: 12px 20px;
-  margin-bottom: 10px;
+  margin: 10px;
   font-size: large;
   background-color: goldenrod;
   color: black;
@@ -333,10 +334,12 @@ textarea {
     transform-origin: center;
     transform-style: preserve-3d;
     transform: translateZ(-30vw) rotateY(0);
-    animation: carousel 10s infinite cubic-bezier(0.77, 0, 0.175, 1) forwards;
+    -webkit-animation: carousel 10s infinite cubic-bezier(0.77, 0, 0.175, 1) forwards;
+            animation: carousel 10s infinite cubic-bezier(0.77, 0, 0.175, 1) forwards;
   }
   .icon-cards__content.step-animation {
-    animation: carousel 8s infinite steps(1) forwards;
+    -webkit-animation: carousel 8s infinite steps(1) forwards;
+            animation: carousel 8s infinite steps(1) forwards;
   }
   .icon-cards__item {
     position: absolute;
@@ -354,6 +357,8 @@ textarea {
   }
   .icon-cards__item:nth-child(1) {
     width: auto;
+    height: -webkit-max-content;
+    height: -moz-max-content;
     height: max-content;
     background: transparent;
     transform: rotateY(0) translateZ(35vw);
@@ -365,6 +370,20 @@ textarea {
   .icon-cards__item:nth-child(3) {
     background: transparent;
     transform: rotateY(240deg) translateZ(35vw);
+  }
+  @-webkit-keyframes carousel {
+    0%, 17.5% {
+      transform: translateZ(-35vw) rotateY(0);
+    }
+    27.5%, 45% {
+      transform: translateZ(-35vw) rotateY(-120deg);
+    }
+    55%, 72.5% {
+      transform: translateZ(-35vw) rotateY(-240deg);
+    }
+    82.5%, 100% {
+      transform: translateZ(-35vw) rotateY(-360deg);
+    }
   }
   @keyframes carousel {
     0%, 17.5% {
@@ -388,7 +407,10 @@ textarea {
     text-transform: uppercase;
     color: white;
     transition: color 0.3s ease;
-    user-select: none;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
   }
   .checkbox:hover {
     color: white;
@@ -427,11 +449,35 @@ textarea {
   .checkbox > input:checked ~ .checkbox__checkbox {
     border-color: transparent;
     background: white;
-    animation: jelly 0.6s ease;
+    -webkit-animation: jelly 0.6s ease;
+            animation: jelly 0.6s ease;
   }
   .checkbox > input:checked ~ .checkbox__checkbox:after {
     opacity: 1;
     transform: rotate(45deg) scale(1);
+  }
+  @-webkit-keyframes jelly {
+    from {
+      transform: scale(1, 1);
+    }
+    30% {
+      transform: scale(1.25, 0.75);
+    }
+    40% {
+      transform: scale(0.75, 1.25);
+    }
+    50% {
+      transform: scale(1.15, 0.85);
+    }
+    65% {
+      transform: scale(0.95, 1.05);
+    }
+    75% {
+      transform: scale(1.05, 0.95);
+    }
+    to {
+      transform: scale(1, 1);
+    }
   }
   @keyframes jelly {
     from {
@@ -494,7 +540,8 @@ textarea {
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     margin: 30px;
     text-align: justify;
-    margin-block-end: 70px;
+    -webkit-margin-after: 70px;
+            margin-block-end: 70px;
   }
   .deco {
     display: block;
@@ -554,7 +601,7 @@ textarea {
 }
 
 .backgroundproduct {
-  background-image: url(../assets/landscape-1511297205-portada-arizona.jpg);
+  background-image: url(../assets/aizona.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
 }
